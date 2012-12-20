@@ -1,5 +1,6 @@
 package com.github.tasubo.lightmvc;
 
+import com.github.tasubo.lightmvc.user.User;
 import com.google.inject.servlet.ServletModule;
 
 public class CoreServletModule extends ServletModule {

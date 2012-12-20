@@ -1,6 +1,6 @@
 package com.github.tasubo.lightmvc.security.tags;
 
-import com.github.tasubo.lightmvc.User;
+import com.github.tasubo.lightmvc.user.User;
 import java.io.IOException;
 import java.util.Arrays;
 import javax.servlet.jsp.JspException;

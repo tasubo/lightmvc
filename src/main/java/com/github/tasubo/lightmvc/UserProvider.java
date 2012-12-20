@@ -1,5 +1,7 @@
 package com.github.tasubo.lightmvc;
 
+import com.github.tasubo.lightmvc.user.User;
+import com.github.tasubo.lightmvc.user.UserManager;
 import javax.inject.Inject;
 import javax.inject.Provider;
 

@@ -9,11 +9,11 @@ import org.slf4j.LoggerFactory;
 
 public class Config {
 
-    public static final String CONFIG_PATH = "/config.properties";
+    private static final String CONFIG_PATH = "/config.properties";
     private final static Logger LOG = LoggerFactory.getLogger(Config.class);
     private ResourceBundle bundle;
 
-    protected Config() {
+    Config() {
         InputStream inputStream =
                 Config.class.getResourceAsStream(CONFIG_PATH);
         try {
@@ -22,7 +22,7 @@ public class Config {
             LOG.error("Could not load properties", ex);
         }
     }
-    
+
     public String get(String string) {
         return bundle.getString(string);
     }
@@ -30,5 +30,4 @@ public class Config {
     public ResourceBundle getBundle() {
         return bundle;
     }
-    
 }
